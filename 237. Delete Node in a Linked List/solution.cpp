@@ -1,4 +1,4 @@
-void deleteNode(ListNode* &head, int value) {
+void DeleteNode(ListNode* &head, int value) {
     if (!head) return;
 
     if (head->val == value) {
