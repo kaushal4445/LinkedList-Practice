@@ -27,42 +27,30 @@ public:
 class Solution {
 public:
     // Function to return the length of loop using Floyd's Algorithm
-    int lengthOfLoop(Node* head) {
-        // Initialize slow and fast pointers
-        Node* slow = head;
-        Node* fast = head;
-
-        // Loop until fast and slow meet
-        while (fast != NULL && fast->next != NULL) {
-            // Move slow by one step
-            slow = slow->next;
-
-            // Move fast by two steps
-            fast = fast->next->next;
-
-            // If slow and fast meet, loop detected
-            if (slow == fast) {
-                // Count the length of the loop
-                return countLoopLength(slow);
-            }
-        }
-
-        // No loop found
-        return 0;
+    int countLoopLength(Node* slow, Node*fast){
+    int count =1;
+    fast = fast->next;
+    while(slow!= fast){
+        count++;
+        fast = fast->next;
     }
+    return count;
+}
 
-    // Function to count loop length
-    int countLoopLength(Node* meetingPoint) {
-        // Start from meeting point
-        Node* temp = meetingPoint;
-        int length = 1;
-
-        // Move until we meet again
-        while (temp->next != meetingPoint) {
-            temp = temp->next;
-            length++;
+class Solution {
+  public:
+    int lengthOfLoop(Node *head) {
+        // code here
+        Node*slow = head;
+        Node*fast = head;
+        while(fast!= NULL && fast->next!= NULL){
+            slow = slow->next;
+            fast = fast->next->next;
+            if(slow == fast)
+            return countLoopLength(slow, fast);
         }
-        return length;
+    
+    return 0;
     }
 };
 
