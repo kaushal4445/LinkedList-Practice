@@ -83,5 +83,3 @@ Fast pointer helps slow pointer reach the middle efficiently.
 ------------------------------------------------------------------------
 
 ## 🏷️ Tags
-
-Linked List, Two Pointer, DSA
