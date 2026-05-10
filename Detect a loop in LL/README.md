@@ -1,4 +1,4 @@
-🔁 Detect Cycle in Linked List
+ Detect Cycle in Linked List
 
 This project demonstrates how to efficiently detect whether a singly linked list contains a cycle using Floyd’s Cycle Detection Algorithm (Tortoise and Hare).
 
