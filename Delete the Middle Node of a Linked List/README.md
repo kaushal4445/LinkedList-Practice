@@ -1,4 +1,4 @@
-# 🚀 Delete Middle Node of a Linked List (C++)
+#  Delete Middle Node of a Linked List (C++)
 
 ## 📌 Problem Statement
 Given the `head` of a singly linked list, delete the **middle node** and return the updated list.
